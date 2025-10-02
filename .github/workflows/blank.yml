@@ -13,7 +13,7 @@ jobs:
     steps:
     
       - name: Hola Mundo
-        run: echo Hello, world!
+        run: npm install
       
       - name: Imprimir multiples lineas
         run: |
@@ -21,7 +21,8 @@ jobs:
           echo test, and deploy your project.
           echo Hola Mundo
           echo Patricio Alvear
-
+  
+ 
   deployar:
     
     runs-on: ubuntu-latest
@@ -29,5 +30,5 @@ jobs:
     steps:
     
       - name: Deploy
-        run: echo Estoy haciendo un deploy     
+        run: npm -version   
      
