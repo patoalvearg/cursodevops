@@ -26,6 +26,8 @@ jobs:
           echo "Valor de la plataforma: ${{env.platform}} "
           echo "Valor de la region: ${{env.region}} "
           echo "Valor de la cuenta: ${{env.acount}}"
+          echo "Valor de la GithubAction: $GITHUB_ACTION"
+          echo "Valor del Actor: $GITHUB_ACTOR"
          
   deployar:
     
