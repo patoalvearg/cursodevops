@@ -12,10 +12,11 @@ jobs:
 
     steps:
     
-      - name: Listar
-        run: ls -al
       - name: Checkout
         uses: actions/checkout@v5.0.0
+      - name: Listar
+        run: ls -al
+    
          
  
      
