@@ -12,8 +12,8 @@ jobs:
     
     steps:
     
-      - name: Hola Mundo
-        run: npm install
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v5.0.0
       
       - name: Imprimir multiples lineas
         run: |
