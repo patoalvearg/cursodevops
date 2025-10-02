@@ -21,3 +21,13 @@ jobs:
           echo test, and deploy your project.
           echo Hola Mundo
           echo Patricio Alvear
+
+  deployar:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+      - name: Deploy
+        run: echo Estoy haciendo un deploy     
+     
