@@ -9,7 +9,12 @@ jobs:
   construir:
     
     runs-on: ubuntu-latest
-    
+    #Variables de entorno
+    env: 
+      platform: azure
+      region: us-west
+      acount: 1312312
+
     steps:
     
       - name: Setup Node.js environment
@@ -17,12 +22,10 @@ jobs:
       
       - name: Imprimir multiples lineas
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          echo Hola Mundo
-          echo Patricio Alvear
-  
- 
+          echo "Valor de la plataforma: ${{env.platform}} "
+          echo "Valor de la region: ${{env.region}} "
+          echo "Valor de la cuenta: ${{env.acount}}"
+         
   deployar:
     
     runs-on: ubuntu-latest
