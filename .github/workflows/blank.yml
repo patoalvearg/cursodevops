@@ -13,7 +13,7 @@ jobs:
     steps:
 
       - name: mi accion
-        uses: ./github/actions/my-action
+        uses: ./.github/actions/my-action
       
          
  
