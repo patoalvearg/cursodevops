@@ -5,27 +5,13 @@ on:
   push:
     
 jobs:
- 
-  construir:
-    
-    runs-on: ubuntu-latest
-
-    steps:
-    
-      - name: Checkout
-        uses: actions/checkout@v5.0.0
-      - name: Setup PHP Action
-        uses: shivammathur/setup-php@2.35.5
-        with:
-          php-version: '8.3'
-
-
+  
   instalar:
     
     runs-on: ubuntu-latest
 
     steps:
-          
+
       - name: mi accion
         uses: ./github/actions/my-action
       
