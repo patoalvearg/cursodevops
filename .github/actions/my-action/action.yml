@@ -1,0 +1,10 @@
+name: Mi accion
+description: Mi acción personalizada 
+
+runs: 
+    using: composite
+
+    steps:
+        - name: Hola Mundo
+          run: echo "Hola Mundo"
+          shell: bash
