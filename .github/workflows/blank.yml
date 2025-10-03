@@ -14,5 +14,5 @@ jobs:
               - 3306:3306  
         steps: 
         - name: Imprimir variable
-          run: echo "Valor variable: ${{vars.BASEDEDATOS}}"      
+          run: echo "Valor variable ${{vars.BASEDEDATOS}}"      
    
