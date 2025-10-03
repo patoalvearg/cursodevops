@@ -15,4 +15,6 @@ jobs:
         steps: 
         - name: Imprimir variable
           run: echo "Valor variable ${{vars.BASEDEDATOS}}"      
+        - name: Imprimir secret
+          run: echo "Valor variable ${{secrets.CLAVEBD}}"     
    
